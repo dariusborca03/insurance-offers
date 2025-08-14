@@ -13,12 +13,17 @@ const apiLogin = axios.create({
 })
 
 export class ServiceAPI {
+  /**
+   * Trimite imaginea talonului auto către backend pentru procesare OCR.
+   * @param {File} file - Fișierul imagine selectat de utilizator.
+   * @returns {Promise<object>} - Datele extrase din talon.
+   */
   static async processRegistrationDocument(file) {
     try {
       const formData = new FormData()
       formData.append('document', file)
 
-      const response = await api.post('/orice_endpoint', formData, {
+      const response = await api.post('/vehicles/process-registration-document', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -27,20 +32,17 @@ export class ServiceAPI {
       return response.data
     } catch (error) {
       console.error('Error processing document:', error)
-      throw error
+      throw error // Aruncă eroarea mai departe pentru a fi prinsă în componenta Vue
     }
   }
 
   static async fetchNationalities() {
     try {
       const response = await api.get('/countries')
-      // axios da throw la eroare automat => nu mai e nevoie de if (!response.ok)
       return response.data.data || response.data
-      // in  axios, 'response.data' e deja format JSON
     } catch (error) {
       console.error('Error fetching countries:', error)
       return []
-      // ^^ evitam sa returneze undefined, care poate face sa dea crash
     }
   }
 
@@ -67,7 +69,6 @@ export class ServiceAPI {
   static async fetchOffers(product) {
     try {
       const response = await api.post('/offer', product)
-      // method: 'POST' -> api.post(..), content-type este JSON impkicit in axios, si stringify se face direct
       return response.data
     } catch (error) {
       console.error('Error fetching offers:', error)

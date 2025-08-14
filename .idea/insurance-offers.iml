@@ -115,10 +115,15 @@
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/var-dumper" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/yaml" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/thiagoalessio/tesseract_ocr" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/tijsverkoyen/css-to-inline-styles" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/intervention/gif" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/intervention/image" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/thiagoalessio/tesseract_ocr" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

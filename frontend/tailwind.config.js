@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        jura: ['Jura', 'sans-serif'], // Schimbă numele să fie mai clar
+        jura: ['Jura', 'sans-serif'],
       },
       colors: {
         'extra-dark-blue': '#171646',
