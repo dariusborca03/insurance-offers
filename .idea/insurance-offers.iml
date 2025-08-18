@@ -49,7 +49,6 @@
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/nunomaduro/collision" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/nunomaduro/termwind" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/phar-io/manifest" />
-      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/phar-io/version" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/phpoption/phpoption" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/phpunit/php-code-coverage" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/phpunit/php-file-iterator" />
